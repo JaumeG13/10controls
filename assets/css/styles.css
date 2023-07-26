@@ -9,7 +9,7 @@ section.index {
 div.section-bg-image {
     height: 90vh;
     overflow: hidden;
-    background-image: url('/assets/images/background/abudhabi.jpg');  /*change after every event*/
+    background-image: url('/assets/images/background/f1.jpg');  /*change after every event*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
