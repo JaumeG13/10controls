@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="shortcut icon" href="/assets/images/logos/10c.png">
+    <link rel="stylesheet" href="/assets/css/structure-styling.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> <!-- Import font awesome for icons -->
+    <script src="/assets/js/roundToggleButtons.js"></script>                <!--script for the buttons to toggle standings and results-->
+    <!--<script type="module" src="/assets/js/fillResultsTable.js"></script>    script for the results table-->       
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>     <!--jquery code to import header and footer-->
+    <script type="text/javascript">                                         //jquery code to import header and footer
+        $(document).ready(function(){
+          $("#header").load("/header.html");
+          $("#footer").load("/footer.html");
+         });
+    </script>
+</head>
+
+
+
+<body>
+    <div class="main-container">
+        <div id="header"></div>
+
+        <section class="grid-container">
+            <h1>results</h1>
+
+            <div class="grid-toggle">
+                <div class="toggle-button" id="button1" onclick="showRound1()">R1</div>
+                <div class="toggle-button" id="button2" onclick="showRound2()">R2</div>
+                <div class="toggle-button" id="button3" onclick="showRound3()">R3</div>
+                <div class="toggle-button" id="button4" onclick="showRound4()">R4</div>
+                <div class="toggle-button" id="button5" onclick="showRound5()">R5</div>
+                <div class="toggle-button" id="button6" onclick="showRound6()">R6</div>
+                <div class="toggle-button" id="button7" onclick="showRound7()">R7</div>
+                <div class="toggle-button" id="button8" onclick="showRound8()">R8</div>
+                <div class="toggle-button" id="button9" onclick="showRound9()">R9</div>
+                <div class="toggle-button" id="button10" onclick="showRound10()">R10</div>
+            </div>
+
+            <div class="race-results" id="round1">
+                <div class="grid-header" id="results">Round  - </div>
+
+                <div class="grid-element" id="grid-title">Position</div>
+                <div class="grid-element" id="grid-title">Driver</div>
+                <div class="grid-element" id="grid-title">Qualified</div>
+                <div class="grid-element" id="grid-title">+/-</div>
+                <div class="grid-element" id="grid-title">Time</div>
+                <div class="grid-element" id="grid-title">Fastest lap</div>
+
+                <div class="grid-element">1</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">2</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">3</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">4</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">5</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">6</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">7</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">8</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">9</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">10</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">11</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">12</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">13</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">14</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">15</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">16</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">17</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">18</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">19</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+
+                <div class="grid-element">20</div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+                <div class="grid-element"></div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
