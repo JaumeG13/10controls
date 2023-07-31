@@ -9,7 +9,7 @@ section.index {
 div.section-bg-image {
     height: 90vh;
     overflow: hidden;
-    background-image: url('/assets/images/background/f1.jpg');  /*change after every event*/
+    background-image: url('/assets/images/background/f1.png');  /*change after every event*/
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -255,40 +255,10 @@ div.race-results#round6 {
 
 
 
-/* DRIVER PROFILE */
-section.driver-profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-div.driver-card {
-    width: 100%;
-    padding: 5vh;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid green;
-}
-div.driver-card img {
-    width: 50%;
-}
-div.driver-card h1, div.driver-card h2 {
-    text-align: left;
-    margin: 0;
-}
-div.driver-card div {
-    width: 100%;
-}
-/* END OF DRIVER PROFILE */
-
-
-
-
-
-
 /* SCHEDULE */
 section.schedule {
-    width: 60%;
-    margin: 0 20%;
+    width: 80%;
+    margin: 0 10%;
     display: flex;
     flex-direction: column;
 }
@@ -296,30 +266,53 @@ section.schedule h1 {
     font-weight: 900;
 }
 div.schedule-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding-bottom: 1em;
 }
-div.round {
+div.event {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: #492833 0.4em solid;
+    border-radius: 25px;
+    background-color: black;
+    justify-content: space-between;
+    overflow: hidden;
+}
+div.event img {
+    width: 100%;
+    border-bottom: #492833 0.4em solid;
+}
+div.event-subcontainer {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    font-size: 25px;
-    align-items: center;
-    text-align: center;
 }
-div.round .logo {
-    padding: -10px;
+div.event-subcontainer div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-self: center;
 }
-div.round-number {
-    font-weight: 700;
+span.round-span {
+    text-align: right;
+    font-weight: bold;
 }
-div.round div {
-    width: 25%;
-    white-space: nowrap;
+div.event span {
+    padding: 10px;
+    font-size: 1.3em;
+}
+div.event div.championship {
+    background-color: #492833;
+    min-height: 2.4em;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
 }
 /* END OF SCHEDULE */
+
 
 
 

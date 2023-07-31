@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Store</title>
+    <link rel="shortcut icon" href="/assets/images/logos/10c.png">
+    <link rel="stylesheet" href="/assets/css/structure-styling.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>     <!--jquery code to import header and footer-->
+    <script type="text/javascript">                 //jquery code to import header and footer
+        $(document).ready(function(){
+          $("#header").load("/header.html");
+          $("#footer").load("/footer.html");
+         });
+    </script>
+</head>
+
+
+
+<body>
+    <div class="main-container">
+        
+        <div id="header"></div>
+
+        <section class="capstore">
+            <img src="/assets/images/merch/black-cap.png" alt="Black cap">
+            <img src="/assets/images/merch/white-cap.png" alt="White cap">
+        </section>
+
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
